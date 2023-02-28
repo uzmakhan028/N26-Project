@@ -1,0 +1,35 @@
+<template>
+	<lightning-card variant="Narrow" title="Pricing Details" icon-name="standard:currency">
+			<lightning-layout>
+				<lightning-layout-item padding="around-small">
+					<div class="header-column">
+						<p class="field-title" title="Cost per Calendar Month">Cost per Calendar Month</p>
+						<p>
+							<lightning-formatted-number value={pricingDetails.UnitPrice} format-style="currency"
+								currency-code={pricingDetails.CurrencyIsoCode}></lightning-formatted-number>
+						</p>
+					</div>
+				</lightning-layout-item>
+				<lightning-layout-item padding="around-small">
+					<div class="header-column">
+						<p class="field-title" title="ATM Fee">ATM Fee</p>
+						<p>
+							<lightning-formatted-number value={pricingDetails.ATM_Fee_in_other_currencies__c}
+								format-style="currency" currency-code={pricingDetails.CurrencyIsoCode}>
+							</lightning-formatted-number>
+						</p>
+					</div>
+				</lightning-layout-item>
+				<lightning-layout-item padding="around-small">
+					<div class="header-column">
+						<p class="field-title" title="Card Replacement Cost">Card Replacement Cost</p>
+						<p>
+							<lightning-formatted-number value={pricingDetails.Card_Replacement_Cost__c}
+								format-style="currency" currency-code={pricingDetails.CurrencyIsoCode}>
+							</lightning-formatted-number>
+						</p>
+					</div>
+				</lightning-layout-item>
+			</lightning-layout>
+	</lightning-card>
+</template>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CaseTriggerHandler</members>
+        <members>FetchProductDetails_CLS</members>
+        <members>ProductDetailAPI</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Contact.Contact_UUID__c</members>
+        <members>Contact.Home_Country__c</members>
+        <members>Contact.Product__c</members>
+        <members>Pricebook2.Home_Country__c</members>
+        <members>PricebookEntry.ATM_Fee_in_other_currencies__c</members>
+        <members>PricebookEntry.Card_Replacement_Cost__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Case_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Home_Country</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>Contact-Contact Layout</members>
+        <members>Pricebook2-Price Book Layout</members>
+        <members>PricebookEntry-Price Book Entry Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>fetchcountrybasedprice</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>Agent</members>
+        <name>Profile</name>
+    </types>
+    <version>52.0</version>
+</Package>
